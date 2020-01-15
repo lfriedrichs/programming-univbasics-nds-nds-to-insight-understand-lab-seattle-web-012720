@@ -10,11 +10,10 @@ end
 
 def print_first_directors_movie_titles
   index = 0
-  string = ""
+  array = []
   while directors_database[0][:movies][index]
-      string += directors_database[index][:movies][index][:title]
-      string += "\n"
+      array[index] = directors_database[index][:movies][index][:title]
       index += 1 
   end
-  pp(string)
+  pp(array)
 end
