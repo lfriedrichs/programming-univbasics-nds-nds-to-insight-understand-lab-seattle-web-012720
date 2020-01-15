@@ -12,8 +12,7 @@ def print_first_directors_movie_titles
   index = 0
   string = ""
   while directors_database[0][:movies][index]
-      string += directors_database[0][:movies][index][:title]
+      p(directors_database[0][:movies][index][:title])
       index += 1 
   end
-  p(string)
 end
